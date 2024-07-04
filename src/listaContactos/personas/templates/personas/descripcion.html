@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test</title>
+	</head>
+	<body>
+		{% extends 'base.html' %}
+		{% block content %}
+		<h1>{{objeto.nombres}}</h1>
+		<h2>
+            {% if objeto.edad > 48 %}
+            debe cuidarse del colesterol
+            {% else %}
+            puede comer lo que quiera
+            {% endif %}
+        </h2>
+		{% endblock %}
+	</body>
+</hmtl>
