@@ -18,7 +18,7 @@ def personaCreateView(request):
     if form.is_valid:
         form.save()
         form = PersonaForm()
-    context = {  
+    context = {    
         'form': form
     }
     return render(request, 'personas/personasCreate.html', context)
