@@ -29,3 +29,4 @@ urlpatterns = [
     path('search/', searchForHelp, name='buscar'),
     path('anotherAdd', personasAnotherCreateView, name='OtroAgregarPersonas'),
 ]
+  
