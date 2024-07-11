@@ -22,7 +22,9 @@ def searchForHelp(request):
     return render(request, 'personas/search.html', {})
 
 def personasAnotherCreateView(request):
-    form = RawPersonaForm(request.POST)
+    form =  RawPersonaForm()
+    if request.method == "POST":
+        form = RawPersonaForm(request.POST)
     context = {
         'form': form,
     }
