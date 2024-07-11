@@ -19,7 +19,7 @@ from django.urls import path
 from inicio.views import myHomeView
 from inicio.views import anotherView
 from personas.views import personaTestView, personaCreateView, searchForHelp, personasAnotherCreateView
-
+  
 urlpatterns = [
     path('', myHomeView, name = "Pagina de inicio"),
     path('another/', anotherView, name = "Pagina de inicio"),
